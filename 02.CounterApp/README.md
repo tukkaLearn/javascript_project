@@ -5,8 +5,7 @@
 ### Features
 
 - Increase / Decrease / Reset counter
-- Disable decrease below 0
-- Change color when negative or positive
+- Change color when negative , positive or zero
 
 ### Concepts Covered
 
