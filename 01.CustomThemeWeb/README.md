@@ -1,4 +1,4 @@
-# Tukka Learn Custom Theme Web
+# Tukka Theme Studio
 
 ## Goal: Learn DOM intro + selectors + manipulation
 
@@ -7,6 +7,7 @@
 - Change background color
 - Change text color
 - Click button to change theme
+- Click reset button to reset theme
 
 ---
 
