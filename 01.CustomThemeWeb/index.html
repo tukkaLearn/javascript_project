@@ -2,29 +2,215 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="icon"
       href="https://raw.githubusercontent.com/itzDM/publicAssets/refs/heads/main/favicon.ico"
     />
-    <title>Custom Theme Web</title>
+
+    <title>Tukka Multi Theme Website</title>
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
+
     <script src="script.js" defer></script>
   </head>
+
   <body>
-    <section>
-      <h1>Custom Theme</h1>
-      <div>
-        <label for="bgColor">Change Background Color</label>
-        <input type="color" id="bgColor" />
-      </div>
-      <div>
-        <label for="textColor">Change Text Color</label>
-        <input type="color" id="textColor" />
-      </div>
-      <button id="btn" type="button">Change Theme</button>
-      <p>Tukka Learn</p>
-      <p>|| राम नाम सत्य है ||</p>
-    </section>
+    <!-- BACKGROUND GLOW -->
+
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <!-- MAIN -->
+
+    <main class="theme-container">
+      <!-- HERO -->
+
+      <section class="hero-section">
+        <span class="badge">
+          <i class="fa-solid fa-palette"></i>
+
+          Multi Theme Website
+        </span>
+
+        <h1>Tukka Theme Studio</h1>
+
+        <p>
+          Create beautiful custom themes using Vanilla JavaScript, LocalStorage
+          and CSS variables.
+        </p>
+      </section>
+
+      <!-- CARD -->
+
+      <section class="theme-card">
+        <!-- TOP -->
+
+        <div class="card-header">
+          <div>
+            <h2>Customize Theme</h2>
+
+            <p>Select colors and personalize your UI</p>
+          </div>
+
+          <button id="resetBtn" class="reset-btn">
+            <i class="fa-solid fa-rotate-left"></i>
+            Reset
+          </button>
+        </div>
+
+        <!-- COLOR PICKERS -->
+
+        <div class="theme-grid">
+          <!-- BG -->
+
+          <div class="theme-box">
+            <div class="theme-info">
+              <div class="icon bg-icon">
+                <i class="fa-solid fa-fill-drip"></i>
+              </div>
+
+              <div>
+                <h3>Background Color</h3>
+
+                <span> Choose your background </span>
+              </div>
+            </div>
+
+            <input type="color" id="bgColor" value="#0f172a" />
+          </div>
+
+          <!-- TEXT -->
+
+          <div class="theme-box">
+            <div class="theme-info">
+              <div class="icon text-icon">
+                <i class="fa-solid fa-font"></i>
+              </div>
+
+              <div>
+                <h3>Text Color</h3>
+
+                <span> Customize text visibility </span>
+              </div>
+            </div>
+
+            <input type="color" id="textColor" value="#ffffff" />
+          </div>
+
+          <!-- CARD -->
+
+          <div class="theme-box">
+            <div class="theme-info">
+              <div class="icon card-icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+
+              <div>
+                <h3>Card Color</h3>
+
+                <span> Change container color </span>
+              </div>
+            </div>
+
+            <input type="color" id="cardColor" value="#111827" />
+          </div>
+
+          <!-- BUTTON -->
+
+          <div class="theme-box">
+            <div class="theme-info">
+              <div class="icon btn-icon">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+
+              <div>
+                <h3>Button Color</h3>
+
+                <span> Pick accent color </span>
+              </div>
+            </div>
+
+            <input type="color" id="btnColor" value="#8b5cf6" />
+          </div>
+        </div>
+
+        <!-- ACTIONS -->
+
+        <div class="action-buttons">
+          <button id="applyBtn" class="primary-btn">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            Apply Theme
+          </button>
+
+          <button id="randomBtn" class="secondary-btn">
+            <i class="fa-solid fa-shuffle"></i>
+
+            Random Theme
+          </button>
+        </div>
+      </section>
+
+      <!-- PREVIEW -->
+
+      <section class="preview-card">
+        <div class="preview-top">
+          <div class="preview-logo">T</div>
+
+          <div>
+            <h2>Tukka Learn</h2>
+
+            <p>Theme Preview Dashboard</p>
+          </div>
+        </div>
+
+        <div class="preview-content">
+          <div class="preview-box">
+            <h3>Modern UI</h3>
+
+            <p>Fully responsive custom theme layout.</p>
+          </div>
+
+          <div class="preview-box">
+            <h3>Auto Save</h3>
+
+            <p>Theme saved using LocalStorage.</p>
+          </div>
+
+          <div class="preview-box">
+            <h3>Dynamic Colors</h3>
+
+            <p>Live theme update with smooth animation.</p>
+          </div>
+        </div>
+
+        <div class="quote-box">
+          <i class="fa-solid fa-quote-left"></i>
+
+          <p>|| राम नाम सत्य है ||</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

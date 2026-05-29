@@ -1,27 +1,27 @@
 const PROJECTS = [
   {
-    title: "01 Counter App",
+    title: "Custom Theme Web App",
     description: "Learn DOM basics, events and state handling.",
     level: "Beginner",
-    link: "01-counter",
+    link: "01.CustomThemeWeb",
+    sourceCode:
+      "https://github.com/tukkaLearn/javascript_project/tree/main/01.CustomThemeWeb",
   },
   {
-    title: "02 Theme Switcher",
+    title: "Counter App",
     description: "Learn dark/light mode using localStorage.",
     level: "Advanced",
-    link: "02-theme-switcher",
+    link: "02.CounterApp",
+    sourceCode:
+      "https://github.com/tukkaLearn/javascript_project/tree/main/02.CounterApp",
   },
   {
-    title: "03 Calculator",
+    title: "Digital Clock",
     description: "Master DOM manipulation and logic building.",
     level: "Intermediate",
-    link: "03-calculator",
-  },
-  {
-    title: "04 Todo List",
-    description: "Master DOM manipulation and logic building.",
-    level: "Advanced",
-    link: "04-todo-list",
+    link: "03.DigitalClock",
+    sourceCode:
+      "https://github.com/tukkaLearn/javascript_project/tree/main/03.DigitalClock",
   },
 ];
 
@@ -35,7 +35,10 @@ PROJECTS.forEach((project) => {
         <span class="badge">${project.level}</span>
         <h3>${project.title}</h3>
         <p>${project.description}</p>
-        <a class="btn" href="${project.link}">Open Project</a>
+        <div>
+        <a class="btn" href="https://tukkalearn.github.io/javascript_project/${project.link}">Open Project</a>
+        <a href=${project.sourceCode}>Source code</a>
+        </div>
     `;
   grid.appendChild(card);
 });
