@@ -6,15 +6,14 @@ const counter = document.querySelector("#counter");
 let count = 0;
 
 function updateColor() {
-  if (count > 0) {
+  if (count > 0 && counter.style.color !== "green") {
     counter.style.color = "green";
-  } else if (count < 0) {
+  } else if (count < 0 && counter.style.color !== "red") {
     counter.style.color = "red";
-  } else {
-    counter.style.color = "black";
+  } else if (count === 0 && counter.style.color !== "white") {
+    counter.style.color = "white";
   }
 }
-
 increase.addEventListener("click", () => {
   count++;
   counter.textContent = count;
