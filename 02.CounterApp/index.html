@@ -2,24 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="icon"
       href="https://raw.githubusercontent.com/itzDM/publicAssets/refs/heads/main/favicon.ico"
     />
-    <title>Counter App</title>
+
+    <title>Tukka Counter App</title>
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
+
     <script src="script.js" defer></script>
   </head>
+
   <body>
-    <main>
-      <h1>Counter</h1>
-      <div id="counter">0</div>
-      <div id="buttons">
-        <button id="decrease">Decrease</button>
-        <button id="reset">Reset</button>
-        <button id="increase">Increase</button>
+    <!-- BACKGROUND GLOW -->
+
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- MAIN -->
+
+    <main class="counter-container">
+      <!-- TOP -->
+
+      <div class="top-section">
+        <span class="badge">
+          <i class="fa-solid fa-bolt"></i>
+          Smart Counter
+        </span>
+
+        <h1>Tukka Counter App</h1>
+
+        <p>Modern responsive counter UI using HTML CSS and JavaScript.</p>
       </div>
+
+      <!-- COUNTER CARD -->
+
+      <section class="counter-card">
+        <!-- COUNTER -->
+
+        <div class="counter-circle">
+          <span id="counter"> 0 </span>
+        </div>
+
+        <!-- BUTTONS -->
+
+        <div id="buttons">
+          <button id="decrease" class="btn danger-btn">
+            <i class="fa-solid fa-minus"></i>
+            Decrease
+          </button>
+
+          <button id="reset" class="btn reset-btn">
+            <i class="fa-solid fa-rotate-left"></i>
+            Reset
+          </button>
+
+          <button id="increase" class="btn success-btn">
+            <i class="fa-solid fa-plus"></i>
+            Increase
+          </button>
+        </div>
+      </section>
     </main>
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Made for Learners |
+        <a href="https://tukkalearn.vercel.app/" target="_blank">Tukka Learn</a>
+      </p>
+      <p>Made with ❤️ by || सीता राम जी ||</p>
+      <p class="copyright"></p>
+      <p>|| राम नाम सत्य है ||</p>
+    </footer>
   </body>
 </html>
