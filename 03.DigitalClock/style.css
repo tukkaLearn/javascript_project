@@ -2,13 +2,139 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
-main {
+
+body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  gap: 50px;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  gap: 10px;
+  background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+/* BACKGROUND GLOW */
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: #38bdf8;
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  filter: blur(120px);
+  opacity: 0.35;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #8b5cf6;
+  border-radius: 50%;
+  bottom: -100px;
+  right: -100px;
+  filter: blur(120px);
+  opacity: 0.35;
+}
+
+/* CLOCK CARD */
+
+.clock-card {
+  width: 90%;
+  max-width: 600px;
+  padding: 40px 35px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.clock-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 50px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.clock {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.date {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+  font-size: 14px;
+  p {
+    margin: 10px 0;
+  }
+  a {
+    color: #38bdf8;
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .clock-card {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .clock {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .clock {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
 }

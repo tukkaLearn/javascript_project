@@ -1,6 +1,26 @@
-const clock = document.querySelector("#clock");
+const clock = document.getElementById("clock");
+const date = document.getElementById("date");
 
-setInterval(() => {
-  const dateAndTime = new Date();
-  clock.textContent = dateAndTime.toLocaleString();
-}, 1000);
+function updateClock() {
+  const now = new Date();
+
+  // TIME
+
+  const time = now.toLocaleTimeString();
+
+  // DATE
+
+  const fullDate = now.toLocaleDateString("en-IN", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  clock.innerText = time;
+  date.innerText = fullDate;
+}
+
+updateClock();
+
+setInterval(updateClock, 1000);
