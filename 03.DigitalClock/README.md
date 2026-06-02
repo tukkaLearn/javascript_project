@@ -1,11 +1,11 @@
-# Tukka Learn Digital Clock
+# Tukka Digital Clock
 
 ## Goal: Task Scheduler intro
 
 ### Features
 
 - Live time updating every second
-- Show date + AM/PM
+- Show date + Time
 
 ### Concepts Covered
 

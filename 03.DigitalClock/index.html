@@ -3,18 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Tukka Digital Clock</title>
+
+    <!-- Favicon -->
     <link
       rel="icon"
       href="https://raw.githubusercontent.com/itzDM/publicAssets/refs/heads/main/favicon.ico"
     />
-    <title>Digital Clock</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
+
   <body>
-    <main>
-      <h1>Current Date And Time</h1>
-      <h2 id="clock"></h2>
+    <main class="clock-card">
+      <span class="clock-badge"> Tukka Digital Clock </span>
+
+      <h1>Current Date & Time</h1>
+
+      <h2 class="clock" id="clock">00:00:00</h2>
+
+      <p class="date" id="date">Monday, January 1, 2026</p>
     </main>
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Made for Learners |
+        <a href="https://tukkalearn.vercel.app/" target="_blank">Tukka Learn</a>
+      </p>
+      <p>Made with ❤️ by || सीता राम जी ||</p>
+      <p class="copyright"></p>
+      <p>|| राम नाम सत्य है ||</p>
+    </footer>
   </body>
 </html>
