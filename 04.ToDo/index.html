@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tukka Todo App</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <div class="header-container">
+        <h1 class="logo">Tukka Todo App</h1>
+
+        <div class="task-count">
+          <i class="fa-solid fa-list-check"></i>
+          <span id="taskCount">0</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="container">
+      <section id="todo-input">
+        <!-- INPUT -->
+
+        <div class="todo-input-box">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter your task here..."
+          />
+
+          <button id="btnAdd">
+            <i class="fa-solid fa-plus"></i>
+            Add Task
+          </button>
+        </div>
+
+        <!-- FILTER + SORT -->
+
+        <div class="filter-box">
+          <div class="filter-group">
+            <button class="filter-btn active-filter" id="all">All</button>
+
+            <button class="filter-btn" id="completed">Completed</button>
+
+            <button class="filter-btn" id="pending">Pending</button>
+          </div>
+
+          <select class="sort-select" id="sort">
+            <option value="newest">Sort : New First</option>
+            <option value="oldest">Sort : Old First</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- TODO LIST -->
+
+      <div class="todo-list">
+        <!-- CARD Show Here -->
+      </div>
+    </main>
+    <footer>
+      <p>
+        Made for Learners |
+        <a href="https://tukkalearn.vercel.app/" target="_blank">Tukka Learn</a>
+      </p>
+      <p>Made with ❤️ by || सीता राम जी ||</p>
+      <p class="copyright"></p>
+      <p>|| राम नाम सत्य है ||</p>
+    </footer>
+  </body>
+</html>
