@@ -1,17 +1,18 @@
-# Tukka Digital Clock
+# Tukka Image Slider
 
-## Goal: Task Scheduler intro
+## Goal: Image Slider on Click
 
 ### Features
 
-- Live time updating every second
-- Show date + Time
+- Image slider on click
+- next and previous button
+- infinite loop
 
 ### Concepts Covered
 
-- setInterval
-- Date()
-- DOM updates in loop
+- event handling
+- fake data base
+- DOM updates
 
 ---
 

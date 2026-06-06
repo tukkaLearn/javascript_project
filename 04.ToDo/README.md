@@ -1,17 +1,21 @@
-# Tukka Learn Digital Clock
+# Tukka Todo Task
 
-## Goal: Task Scheduler intro
+## Goal: Event Handling
 
 ### Features
 
-- Live time updating every second
-- Show date + AM/PM
+- Add new task
+- Delete task
+- Mark task as completed
+- Filter tasks
+- Sort tasks
 
 ### Concepts Covered
 
-- setInterval
-- Date()
-- DOM updates in loop
+- addEventListener
+- fake data base
+- form data handling
+- DOM updates
 
 ---
 

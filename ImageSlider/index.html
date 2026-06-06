@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tukka Image Slider</title>
 
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/itzDM/publicAssets/refs/heads/main/favicon.ico"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -18,72 +29,7 @@
 
     <div class="slider-container">
       <div class="slider">
-        <!-- SLIDE 1 -->
-
-        <div class="slide active">
-          <img
-            src="https://raw.githubusercontent.com/itzDM/publicAssets/refs/heads/main/ads/gf11.gif?raw=true"
-            alt="Nature"
-          />
-
-          <div class="overlay">
-            <div class="content">
-              <span class="tag"> Tukka Slider </span>
-
-              <h2>Explore Beautiful Nature</h2>
-
-              <p>
-                Modern responsive image carousel design using HTML, CSS and
-                JavaScript.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- SLIDE 2 -->
-
-        <div class="slide">
-          <img
-            src="https://raw.githubusercontent.com/itzDM/publicAssets/refs/heads/main/ads/gif9.avif"
-            alt="City"
-          />
-
-          <div class="overlay">
-            <div class="content">
-              <span class="tag"> Tukka Projects </span>
-
-              <h2>Creative Modern UI Design</h2>
-
-              <p>
-                Stylish layouts with smooth transitions and fully responsive
-                design.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- SLIDE 3 -->
-
-        <div class="slide">
-          <img
-            src="https://raw.githubusercontent.com/itzDM/publicAssets/refs/heads/main/ads/gif10.gif"
-            alt="Workspace"
-          />
-
-          <div class="overlay">
-            <div class="content">
-              <span class="tag"> Tukka Web Design </span>
-
-              <h2>Build Amazing Projects</h2>
-
-              <p>
-                Perfect for portfolios, project showcases and GitHub Pages
-                websites.
-              </p>
-            </div>
-          </div>
-        </div>
-
+        <div id="slide-container"></div>
         <!-- BUTTONS -->
 
         <button class="nav-btn prev-btn">
@@ -93,14 +39,6 @@
         <button class="nav-btn next-btn">
           <i class="fa-solid fa-angle-right"></i>
         </button>
-
-        <!-- DOTS -->
-
-        <div class="dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
       </div>
     </div>
     <footer>
@@ -112,68 +50,5 @@
       <p class="copyright"></p>
       <p>|| राम नाम सत्य है ||</p>
     </footer>
-
-    <script>
-      const slides = document.querySelectorAll(".slide");
-      const dots = document.querySelectorAll(".dot");
-
-      const nextBtn = document.querySelector(".next-btn");
-      const prevBtn = document.querySelector(".prev-btn");
-
-      let currentSlide = 0;
-
-      function showSlide(index) {
-        slides.forEach((slide) => {
-          slide.classList.remove("active");
-        });
-
-        dots.forEach((dot) => {
-          dot.classList.remove("active");
-        });
-
-        slides[index].classList.add("active");
-        dots[index].classList.add("active");
-      }
-
-      nextBtn.addEventListener("click", () => {
-        currentSlide++;
-
-        if (currentSlide >= slides.length) {
-          currentSlide = 0;
-        }
-
-        showSlide(currentSlide);
-      });
-
-      prevBtn.addEventListener("click", () => {
-        currentSlide--;
-
-        if (currentSlide < 0) {
-          currentSlide = slides.length - 1;
-        }
-
-        showSlide(currentSlide);
-      });
-
-      dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-          currentSlide = index;
-
-          showSlide(currentSlide);
-        });
-      });
-
-      // AUTO SLIDE
-
-      setInterval(() => {
-        currentSlide++;
-
-        if (currentSlide >= slides.length) {
-          currentSlide = 0;
-        }
-
-        showSlide(currentSlide);
-      }, 4000);
-    </script>
   </body>
 </html>
