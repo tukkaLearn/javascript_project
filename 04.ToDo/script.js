@@ -1,5 +1,5 @@
 // -----------Todo--------------------------
-//  FakeData Base Like Setup const todos = [];
+//  Fake DataBase Like Setup const todos = [];
 //  Set  let currentFilter = "all"; // 'all', 'pending', 'completed'
 //  Set let currentSort = "newest"; // 'newest', 'oldest'
 
