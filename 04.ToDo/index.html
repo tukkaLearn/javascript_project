@@ -85,6 +85,30 @@
 
       <div class="todo-list">
         <!-- CARD Show Here -->
+        <!-- Sample Card Start  -->
+        <div class="todo-card ${completedClass}" key="${i.id}">
+          <div class="todo-left">
+            <h3>${i.taskName}</h3>
+            <div class="todo-meta">
+              <span class="meta">
+                <i class="fa-regular fa-clock"></i> ${String(i.time).slice(0,
+                25)}
+              </span>
+              <span class="meta ${i.status.toLowerCase()}">
+                <i class="fa-solid fa-circle-check"></i> ${i.status}
+              </span>
+            </div>
+          </div>
+          <div class="todo-actions">
+            <button class="icon-btn check-btn">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="icon-btn delete-btn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Sample Card End -->
       </div>
     </main>
     <footer>
