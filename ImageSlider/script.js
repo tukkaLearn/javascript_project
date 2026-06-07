@@ -19,4 +19,9 @@ const imagesData = [
   },
 ];
 
-// Todo
+// ---------------Todo--------------
+
+// Select slider container Element using 'slider-container' id
+// Select nextBtn Element using 'next-btn' class first element
+// Select prevBtn Element using 'prev-btn' class first element
+// Create slide in slider container,get things from HTML File Where you have to modify
