@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tukka Modal Popup</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/itzDM/publicAssets/refs/heads/main/favicon.ico"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- OPEN BUTTON -->
+
+    <button class="open-btn" id="openModal">
+      <i class="fa-solid fa-layer-group"></i>
+      Open Modal
+    </button>
+
+    <!-- MODAL -->
+
+    <div class="modal" id="modal">
+      <div class="modal-box">
+        <!-- CLOSE BUTTON -->
+
+        <button class="close-btn" id="closeModal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- CONTENT -->
+
+        <div class="modal-content">
+          <div class="modal-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+
+          <h2>Tukka Modal Popup</h2>
+
+          <p>
+            This modern popup system supports: close by clicking outside, close
+            with ESC key, close with ❌ button, smooth animation, and fully
+            responsive design.
+          </p>
+
+          <div class="modal-actions">
+            <button class="btn primary-btn">Continue</button>
+
+            <button class="btn secondary-btn" id="cancelBtn">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Made for Learners |
+        <a href="https://tukkalearn.vercel.app/" target="_blank">Tukka Learn</a>
+      </p>
+      <p>Made with ❤️ by || सीता राम जी ||</p>
+      <p class="copyright"></p>
+      <p>|| राम नाम सत्य है ||</p>
+    </footer>
+  </body>
+</html>

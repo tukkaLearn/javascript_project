@@ -1,6 +1,6 @@
 # Tukka Image Slider
 
-## Goal: Image Slider on Click
+## Goal: DOM + Action on Click
 
 ### Features
 
