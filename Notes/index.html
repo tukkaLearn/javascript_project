@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/itzDM/publicAssets/refs/heads/main/favicon.ico"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <div class="header-container">
+        <h1 class="logo">Tukka Sticky Notes</h1>
+
+        <button class="add-note-btn" id="openModalBtn">
+          <i class="fa-solid fa-plus"></i>
+          Create Note
+        </button>
+      </div>
+    </header>
+
+    <!-- WORKSPACE -->
+
+    <main class="workspace" id="workspace">
+      <div class="empty-message" id="emptyMessage">
+        <i class="fa-solid fa-note-sticky"></i>
+
+        <h2>No Notes Available</h2>
+
+        <p>Create your first sticky note.</p>
+      </div>
+    </main>
+
+    <!-- MODAL -->
+
+    <div class="modal" id="modal">
+      <div class="modal-box">
+        <h2 class="modal-title">Create Sticky Note</h2>
+
+        <p class="modal-description">
+          Add title, content and choose your favorite sticky note color.
+        </p>
+
+        <!-- TITLE -->
+
+        <div class="form-group">
+          <label> Note Title </label>
+
+          <input type="text" id="noteTitle" placeholder="Enter note title..." />
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="form-group">
+          <label> Note Content </label>
+
+          <textarea
+            id="noteContent"
+            placeholder="Write your note here..."
+          ></textarea>
+        </div>
+
+        <!-- COLOR -->
+
+        <div class="form-group">
+          <label> Pick Note Color </label>
+
+          <input type="color" id="noteColor" value="#fde68a" />
+        </div>
+
+        <!-- FOOTER -->
+
+        <div class="modal-footer">
+          <button class="modal-btn cancel-btn" id="closeModalBtn">
+            Cancel
+          </button>
+
+          <button class="modal-btn save-btn" id="saveNoteBtn">Save Note</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Made for Learners |
+        <a href="https://tukkalearn.vercel.app/" target="_blank">Tukka Learn</a>
+      </p>
+      <p>Made by || सीता राम जी ||</p>
+      <p class="copyright"></p>
+      <p>|| राम नाम सत्य है ||</p>
+    </footer>
+  </body>
+</html>
