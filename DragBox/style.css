@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+  font-size: 14px;
+  p {
+    margin: 10px 0;
+    color: #e2e8f0;
+  }
+  a {
+    color: #38bdf8;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+  color: white;
+  overflow: hidden;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero {
+  padding: 60px 20px 30px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 50px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: auto;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+#box {
+  width: 500px;
+  height: 250px;
+  background: rgb(80, 113, 205);
+  border-radius: 10px;
+  position: absolute;
+  left: 35vw;
+  top: 30vh;
+  cursor: grab;
+  z-index: 999;
+}
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+  font-size: 14px;
+  p {
+    margin: 10px 0;
+    color: #e2e8f0;
+  }
+  a {
+    color: #38bdf8;
+  }
+}
