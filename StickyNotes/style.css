@@ -64,7 +64,7 @@ header {
 .workspace {
   position: relative;
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 250px);
   overflow: hidden;
 }
 

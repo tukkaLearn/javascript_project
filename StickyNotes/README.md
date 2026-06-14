@@ -1,10 +1,20 @@
-#
+# Tukka Sticky Notes
 
-## Goal:
+## Goal: DOM + Action on Click+ localStorage
 
 ### Features
 
+- Add Sticky Notes
+- Delete Sticky Notes
+- Edit Sticky Notes
+- Color Sticky Notes
+
 ### Concepts Covered
+
+- event handling
+- DOM updates
+- localStorage
+- date and time
 
 ---
 
