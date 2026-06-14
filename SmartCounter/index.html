@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tukka Smart Counter</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/itzDM/publicAssets/refs/heads/main/favicon.ico"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <!-- DASHBOARD -->
+
+      <div class="dashboard">
+        <!-- TOP BAR -->
+
+        <div class="top-bar">
+          <span class="badge"> Tukka Smart Counter </span>
+
+          <button class="theme-btn" id="themeBtn">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+
+        <!-- TITLE -->
+
+        <p class="description">
+          Advanced counter project using DOM, LocalStorage, keyboard events,
+          dark/light mode and real-time updates.
+        </p>
+
+        <!-- COUNTER -->
+
+        <div class="counter-box">
+          <p class="counter-label">Current Counter Value</p>
+
+          <h2 class="counter" id="counter">0</h2>
+
+          <!-- BUTTONS -->
+
+          <div class="controls">
+            <button class="control-btn increment-btn" id="incrementBtn">
+              <i class="fa-solid fa-plus"></i>
+              Increment
+            </button>
+
+            <button class="control-btn decrement-btn" id="decrementBtn">
+              <i class="fa-solid fa-minus"></i>
+              Decrement
+            </button>
+
+            <button class="control-btn reset-btn" id="resetBtn">
+              <i class="fa-solid fa-rotate-left"></i>
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <!-- INFO -->
+
+        <div class="info-grid">
+          <!-- SHORTCUTS -->
+
+          <div class="info-card">
+            <h3>⌨ Keyboard Shortcuts</h3>
+
+            <div class="shortcut">
+              <span>Increase</span>
+              <kbd>+</kbd>
+            </div>
+
+            <div class="shortcut">
+              <span>Decrease</span>
+              <kbd>-</kbd>
+            </div>
+
+            <div class="shortcut">
+              <span>Reset</span>
+              <kbd>R</kbd>
+            </div>
+          </div>
+          <footer>
+            <p>
+              Made for Learners |
+              <a href="https://tukkalearn.vercel.app/" target="_blank"
+                >Tukka Learn</a
+              >
+            </p>
+            <p>Made by || सीता राम जी ||</p>
+            <p class="copyright"></p>
+            <p>|| राम नाम सत्य है ||</p>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

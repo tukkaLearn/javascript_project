@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bg: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+
+  --card: rgba(255, 255, 255, 0.05);
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --text: white;
+
+  --subtext: #cbd5e1;
+
+  --primary: #38bdf8;
+
+  --danger: #ef4444;
+
+  --success: #22c55e;
+}
+
+/* LIGHT MODE */
+
+body.light {
+  --bg: linear-gradient(135deg, #e0f2fe, #f8fafc, #dbeafe);
+
+  --card: rgba(255, 255, 255, 0.7);
+
+  --border: rgba(0, 0, 0, 0.08);
+
+  --text: #0f172a;
+
+  --subtext: #334155;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.4s;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+  width: 100%;
+  max-width: 750px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 34px;
+  padding: 38px;
+  backdrop-filter: blur(14px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.dashboard::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background: var(--primary);
+  border-radius: 50%;
+  top: -120px;
+  right: -90px;
+  filter: blur(120px);
+  opacity: 0.15;
+}
+
+/* HEADER */
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.badge {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--primary);
+  font-size: 0.9rem;
+}
+
+.theme-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  transform: rotate(12deg) scale(1.05);
+}
+
+/* TITLE */
+
+.description {
+  color: var(--subtext);
+  line-height: 1.9;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/* COUNTER BOX */
+
+.counter-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  padding: 40px 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.counter-label {
+  color: var(--subtext);
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.counter {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: var(--primary);
+  transition: 0.2s;
+  word-break: break-word;
+}
+
+/* BUTTONS */
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 18px;
+}
+
+.control-btn {
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+  color: white;
+}
+
+.increment-btn {
+  background: var(--success);
+}
+
+.decrement-btn {
+  background: #f59e0b;
+}
+
+.reset-btn {
+  background: var(--danger);
+}
+
+.control-btn:hover {
+  transform: translateY(-4px);
+  opacity: 0.92;
+}
+
+/* INFO */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.info-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.info-card h3 {
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+}
+
+.info-card p {
+  color: var(--subtext);
+  line-height: 1.8;
+}
+
+.highlight {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* SHORTCUT */
+
+.shortcut {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: var(--subtext);
+}
+
+kbd {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: var(--text);
+}
+
+body.light kbd {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .dashboard {
+    padding: 26px;
+  }
+
+  .counter {
+    font-size: 4.5rem;
+  }
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+  font-size: 14px;
+  p {
+    margin: 10px 0;
+    color: var(--subtext);
+  }
+  a {
+    color: var(--primary);
+  }
+}
