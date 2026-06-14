@@ -123,13 +123,6 @@ body {
 
 /* TITLE */
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 14px;
-  position: relative;
-  z-index: 2;
-}
-
 .description {
   color: var(--subtext);
   line-height: 1.9;
@@ -260,10 +253,6 @@ body.light kbd {
 @media (max-width: 700px) {
   .dashboard {
     padding: 26px;
-  }
-
-  h1 {
-    font-size: 2rem;
   }
 
   .counter {
